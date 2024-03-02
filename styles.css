@@ -29,6 +29,7 @@ nav ul li a {
     text-decoration: none;
     color: #000;
     position: relative;
+    font-weight: bold;
 }
 
 nav ul li a::after {
