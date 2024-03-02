@@ -111,6 +111,25 @@ footer {
     color: #000;
 }
 
+.project img {
+  max-width: 250px; /* Adjust the maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+  display: inline; /* Position the image inline with the text */
+  margin: 0; /* Remove any margins around the image */
+}
+
+.project {
+  padding: 15px; /* Adjust padding to make the box smaller */
+  margin-bottom: 15px; /* Adjust margin to create spacing between boxes */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.project + .project {
+  margin-top: 15px; /* Add margin between projects */
+}
+
+
 /* Active Navigation Link */
 nav ul li a.active {
     color: #000;
