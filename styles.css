@@ -44,6 +44,10 @@ nav ul li a::after {
     transition: transform 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: #555;
+}
+
 nav ul li a:hover::after {
     transform: scaleX(1);
 }
