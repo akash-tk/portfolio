@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     color: #000;
-    background-color: #f2f2f2; /* Light gray background color */
+    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
 }
@@ -92,7 +92,6 @@ footer {
     text-align: center;
 }
 
-/* Contact Info Styles */
 .contact-info {
     margin-top: 20px;
 }
@@ -112,31 +111,29 @@ footer {
 }
 
 .project img {
-  max-width: 250px; /* Adjust the maximum width of the image */
-  height: auto; /* Maintain aspect ratio */
-  display: inline; /* Position the image inline with the text */
-  margin: 0; /* Remove any margins around the image */
+  max-width: 250px;
+  height: auto;
+  display: inline;
+  margin: 0;
 }
 
 .project {
-  padding: 15px; /* Adjust padding to make the box smaller */
-  margin-bottom: 15px; /* Adjust margin to create spacing between boxes */
+  padding: 15px;
+  margin-bottom: 15px;
   border-radius: 8px;
   border: 1px solid #ccc;
 }
 
 .project + .project {
-  margin-top: 15px; /* Add margin between projects */
+  margin-top: 15px;
 }
 
 
-/* Active Navigation Link */
 nav ul li a.active {
     color: #000;
     font-weight: bold;
 }
 
-/* Media Queries */
 @media only screen and (max-width: 768px) {
     nav ul li {
         display: block;
