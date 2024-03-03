@@ -7,24 +7,25 @@
   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
 
 
-<header class="bg-dark text-white py-4">
-  <div class="container text-center">
-    <h1>Akash T K</h1>
-  </div>
-</header>
-
-
-<nav class="navbar navbar-expand-md navbar-light bg-light justify-content-center">
+  <header>
+    <h1><span id="typed-header"></span><span class="cursor">|</span></h1>
+  </header>      
+  
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
   <div class="container">
 
+    
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
+    
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         
@@ -50,9 +51,6 @@
     </div>
   </div>
 </nav>
-
-
-
 
 <section id="about" class="py-5">
   <div class="container">
@@ -100,6 +98,7 @@
 
 
 <section id="projects" class="py-5">
+  <div class="container">
   <h2 class="h2">Projects</h2>
   <div class="row">
     <div class="col-md-6">
@@ -123,22 +122,44 @@
       </div>
     </div>
   </div>
+</div>
 </section>
 
 
-
-<section id="skills" class="bg-light py-5">
+<section id="skills">
   <div class="container">
-    <h2>Skills</h2>
-    <ul>
-      <li>Python</li>
-      <li>Java</li>
-      <li>C (Programming Language)</li>
-      <li>HTML</li>
-      <li>Cascading Style Sheets (CSS)</li>
-      <li>MySQL</li>
-    </ul>
+  <h2>Skills</h2>
+  <div class="skill-grid">
+    <div class="skill">
+      <i class="fab fa-python"></i>
+      <span>Python</span>
+    </div>
+    <div class="skill">
+      <i class="fab fa-java"></i>
+      <span>Java</span>
+    </div>
+    <div class="skill">
+      <i class="fab fa-js"></i>
+      <span>JavaScript</span>
+    </div>
+    <div class="skill">
+      <i class="fab fa-cuttlefish"></i>
+      <span>C</span>
+    </div>
+    <div class="skill">
+      <i class="fab fa-html5"></i>
+      <span>HTML</span>
+    </div>
+    <div class="skill">
+      <i class="fab fa-css3-alt"></i>
+      <span>CSS</span>
+    </div>
+    <div class="skill">
+      <i class="fas fa-database"></i>
+      <span>MySQL</span>
+    </div>
   </div>
+</div>
 </section>
 
 
@@ -176,5 +197,28 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+  
+  const headerText = "Hi, I'm Akash T K";
+
+  function typeWriter(text, i, callback) {
+    if (i < text.length) {
+      document.getElementById("typed-header").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(() => {
+        typeWriter(text, i, callback);
+      }, 100);
+    } else {
+      if (callback) callback();
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    typeWriter(headerText, 0, () => {
+    });
+  });
+</script>
+
 </body>
 </html>
