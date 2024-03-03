@@ -29,7 +29,6 @@ nav ul li a {
     text-decoration: none;
     color: #000;
     position: relative;
-    font-weight: bold;
 }
 
 nav ul li a::after {
@@ -42,10 +41,6 @@ nav ul li a::after {
     background-color: #000;
     transform: scaleX(0);
     transition: transform 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #555;
 }
 
 nav ul li a:hover::after {
@@ -81,9 +76,7 @@ h2 {
     flex: 1;
 }
 
-.project {
-    margin-bottom: 20px;
-}
+
 
 footer {
     background-color: #000;
@@ -91,6 +84,7 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
 
 .contact-info {
     margin-top: 20px;
@@ -110,29 +104,43 @@ footer {
     color: #000;
 }
 
+
 .project img {
-  max-width: 250px;
-  height: auto;
-  display: inline;
-  margin: 0;
+    max-width: 250px;
+    height: auto; 
+    margin: 10px auto; 
+    display: inline; 
+    margin: 0; 
 }
-
+  
 .project {
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-.project + .project {
-  margin-top: 15px;
-}
+    padding: 15px; 
+    margin-bottom: 15px; 
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .project + .project {
+    margin-top: 15px; 
+  }
+  
+  .project h3 {
+    font-size: 1.3rem; 
+  }
+  
 
 
 nav ul li a.active {
     color: #000;
     font-weight: bold;
 }
+
+
+.navbar-nav .nav-link {
+    font-weight: 400; 
+  }
+  
+
 
 @media only screen and (max-width: 768px) {
     nav ul li {
