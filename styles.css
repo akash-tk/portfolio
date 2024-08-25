@@ -232,3 +232,26 @@ nav ul li a.active {
 section:nth-child(odd) {
   background-color: #e9e9e9;
 }
+
+
+.project {
+  text-align: center;
+}
+
+.project img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover; 
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+  margin-bottom: 10px;
+}
+
+.project p {
+  margin-bottom: 8px;
+}
