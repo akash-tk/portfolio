@@ -225,9 +225,13 @@
 
 <footer class="bg-dark text-white py-4">
   <div class="container text-center">
-    <p>&copy; 2024 Akash T K. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Akash T K. All rights reserved.</p>
   </div>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </footer>
+
 
 <script src="script.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
